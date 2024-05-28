@@ -37,7 +37,7 @@ const FooterContent = () => {
             target="_blank"
             href="https://mui.com/store/contributors/themeselection/"
           >
-            Telefono: +52 (33) 3355 - 3365
+            Telefono: +52 (33) 4605 4178
           </Link>
         </Box>
       )}

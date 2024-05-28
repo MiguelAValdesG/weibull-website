@@ -36,7 +36,7 @@ const data = {
       },
       {
         title: "Valores",
-        description: "Compromiso, Transparencia, Confidencialidad, Eficiencia, Confianza.",
+        description: "Compromiso, Transparencia con el cliente, Confidencialidad, Eficiencia, Confianza.",
       },
     ],
   },
