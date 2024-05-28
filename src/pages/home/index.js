@@ -29,13 +29,11 @@ const Home = () => {
           mx={{ sm: 10, md: 50 }}
           alignSelf={"center"}
         >
-          <Typography variant="h2">¿Quiénes Somos?</Typography>
+          <Typography variant="h2">¿Quiénes somos?</Typography>
           <Typography sx={{ fontSize: "1.5em" }} mt={4}>
-            Somos un equipo de visionarios dedicados al desentrañamiento de
-            datos. <br />
-            En Weibull, convergen expertos en análisis de datos y desarrollo de
-            sistemas, listos para transformar la información en soluciones
-            estratégicas.
+            Somos un equipo de visionarios dedicados a crear, entender e interpretar los datos.<br />
+            Weibull está integrados por expertos en análisis de datos y desarrollo de herramientas
+            web capaces de transformar la información en toma de decisiones.
           </Typography>
         </Grid>
       </Box>
@@ -44,11 +42,10 @@ const Home = () => {
           <Grid md={6} alignSelf={"center"}>
             <Typography variant="h2">¿Qué hacemos?</Typography>
             <Typography sx={{ fontSize: "1.2em" }} mt={5}>
-              Impulsamos decisiones estratégicas respaldadas por ciencia.
+              Impulsamos el entendimiento de datos de importancia internos y externos sustentados en la ciencia.
               <br />
-              Desde la detección de datos faltantes hasta la toma de decisiones
-              instantáneas, Weibull diseña muestreos y realiza análisis variados
-              para proporcionar claridad y soluciones fundamentadas.
+              Brindamos soluciones de inteligencia de negocios desde la detección y recolección de información
+              relevante hasta poder decidir de manera estratégica ante la incertidumbre.
             </Typography>
           </Grid>
           <Grid sm={1} />
@@ -148,10 +145,11 @@ const Home = () => {
                 Proceso
               </Typography>
               <Typography color={"#000"} sx={{ fontSize: 18 }} mt={8}>
-                Nuestro proceso abarca desde la prospección hasta el
-                seguimiento, incluyendo el entendimiento del tema, el
-                preanálisis, la propuesta y ejecución de proyectos, así como la
-                entrega y seguimiento de resultados.
+                La naturaleza de cada proyecto requiere tratamiento y soluciones diferentes, por eso en Weibull
+                empezamos por conocer el modelo de negocios y entender las necesidades planteadas por la empresa,
+                abordamos la problemática con enfoque analítico con fin de generar una propuesta de valor.
+                Nos especializamos en soluciones tecnológicas que involucran desde el desarrollo de herramientas web
+                hasta el procesamiento y análisis de los datos.
               </Typography>
             </Grid>
           </Grid>
@@ -230,9 +228,6 @@ const Home = () => {
       </Grid>
       <Grid sm={12}>
         <Typography variant="h2">Beneficios</Typography>
-        <Typography fontSize={"1.2em"}>
-          Al trabajar con Weibull, disfrutarás de:
-        </Typography>
         <Grid container>
           {data.benefits.content.details.map((element, index) => {
             let color = "";

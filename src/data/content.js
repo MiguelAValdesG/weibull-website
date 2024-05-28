@@ -1,13 +1,13 @@
 const data = {
   whoWeAre: {
-    title: "¿Quiénes Somos?",
+    title: "¿Quiénes somos?",
     content:
-      "Somos un equipo de visionarios dedicados al desentrañamiento de datos. <br/>En Weibull, convergen expertos en análisis de datos y desarrollo de sistemas, listos para transformar la información en soluciones estratégicas.",
+      "Somos un equipo de visionarios dedicados a crear, entender e interpretar los datos. Weibull está integrados por expertos en análisis de datos y desarrollo de herramientas web capaces de transformar la información en toma de decisiones.",
   },
   whatWeDo: {
     title: "¿Qué hacemos?",
     content:
-      "Impulsamos decisiones estratégicas respaldadas por ciencia. Desde la detección de datos faltantes hasta la toma de decisiones instantáneas, Weibull diseña muestreos y realiza análisis variados para proporcionar claridad y soluciones fundamentadas.",
+      "Impulsamos el entendimiento de datos de importancia internos y externos sustentados en la ciencia. Brindamos soluciones de inteligencia de negocios desde la detección y recolección de información relevante hasta poder decidir de manera estratégica ante la incertidumbre.",
   },
   focusAreas: {
     title: "Áreas de Enfoque",
@@ -28,23 +28,22 @@ const data = {
     content: [
       {
         title: "Misión",
-        description: "Facilitar decisiones sustentadas.",
+        description: "Brindar herramientas tecnológicas y analíticas para facilitar el entendimiento y operación del negocio.",
       },
       {
         title: "Visión",
-        description:
-          "Fomentar la conciencia sobre la importancia del análisis de datos.",
+        description: "Fomentar la conciencia sobre la importancia del manejo de datos y el potencial que brindan",
       },
       {
         title: "Valores",
-        description: "Compromiso, eficiencia, responsabilidad y honradez.",
+        description: "Compromiso, Transparencia, Confidencialidad, Eficiencia, Confianza.",
       },
     ],
   },
   process: {
     title: "Proceso",
     content:
-      "Nuestro proceso abarca desde la prospección hasta el seguimiento, incluyendo el entendimiento del tema, el preanálisis, la propuesta y ejecución de proyectos, así como la entrega y seguimiento de resultados.",
+      "La naturaleza de cada proyecto requiere tratamiento y soluciones diferentes, por eso en Weibull empezamos por conocer el modelo de negocios y entender las necesidades planteadas por la empresa, abordamos la problemática con enfoque analítico con fin de generar una propuesta de valor. Nos especializamos en soluciones tecnológicas que involucran desde el desarrollo de herramientas web hasta el procesamiento y análisis de los datos.",
   },
   services: {
     title: "Servicios",
@@ -65,19 +64,15 @@ const data = {
   benefits: {
     title: "Beneficios",
     content: {
-      description: "Al trabajar con Weibull, disfrutarás de:",
       details: [
-        "Reducción de errores",
-        "Estandarización de procesos",
         "Control de información",
-        "Eliminación de gastos innecesarios",
-        "Generación de mayor rentabilidad",
-        "Comprensión del comportamiento del mercado",
-        "Empresa actualizada al día",
-        "Personal capacitado para futuros análisis",
-        "Optimización de recursos",
-        "Datos propios",
-        "Toma de decisiones sustentadas",
+        "Toma de decisiones estratégicas",
+        "Reducción de errores",
+        "Infraestructura digital",
+        "Estandarización de proceso",
+        "Conocimiento integral de la empresa",
+        "Herramientas web personalizadas",
+        "Comprensión del mercado",
       ],
     },
   },
@@ -85,7 +80,7 @@ const data = {
     title: "Contacto",
     content: {
       email: "contacto@weibull.mx",
-      phone: "+52 (33) 3355 - 3365",
+      phone: "+52 (33) 4605 4178",
     },
   },
 };
