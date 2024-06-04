@@ -157,9 +157,6 @@ const Home = () => {
       </Grid>
       <Grid sm={12}>
         <Typography variant="h2">Servicios</Typography>
-        <Typography fontSize={"1.2em"}>
-          Ofrecemos una gama de servicios:
-        </Typography>
         <Grid container columns={{ xs: 1, sm: 2 }} mt={5}>
           {data.services.content.details.map((element, index) => {
             let img = "";

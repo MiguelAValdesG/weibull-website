@@ -48,7 +48,6 @@ const data = {
   services: {
     title: "Servicios",
     content: {
-      description: "Ofrecemos una gama de servicios:",
       details: [
         "Muestreo",
         "Modelado de datos",
