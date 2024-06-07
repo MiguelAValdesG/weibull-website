@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import { Box, CardHeader, CardMedia, Paper } from "@mui/material";
 import data from "src/data/content";
 import { useSettings } from "src/@core/hooks/useSettings";
+import Image from "next/image";
 
 const Home = () => {
   const { settings } = useSettings();
@@ -44,6 +45,7 @@ const Home = () => {
             <Typography sx={{ fontSize: "1.2em" }} mt={5}>
               Impulsamos el entendimiento de datos de importancia internos y externos sustentados en la ciencia.
               <br />
+              <br />
               Brindamos soluciones de inteligencia de negocios desde la detección y recolección de información
               relevante hasta poder decidir de manera estratégica ante la incertidumbre.
             </Typography>
@@ -63,9 +65,6 @@ const Home = () => {
       </Grid>
       <Grid sm={12} my={18} textAlign={"center"}>
         <Typography variant="h3">Áreas de Enfoque</Typography>
-        <Typography sx={{ fontSize: 18, fontWeight: 500 }} my={4}>
-          Dirigimos nuestro expertise a áreas clave:
-        </Typography>
         <Grid container>
           {data.focusAreas.content.details.map((element) => (
             <Grid xs={12} md={4} padding={4}>
@@ -122,29 +121,31 @@ const Home = () => {
         </Grid>
       </Grid>
       <Grid item sm={12}>
-        <Box sx={{ backgroundColor: "#b29e84", padding: 10, borderRadius: 2 }}>
+        <Box sx={{ backgroundColor: "#253439", padding: 10, borderRadius: 2 }}>
           <Grid
             container
             flexDirection={"row"}
             justifyItems={"center"}
             alignItems={"center"}
           >
-            <Grid sm={12} md={6}>
-              <img
+            <Grid sm={12} md={6} paddingRight={10}>
+              <Image
                 src="/images/pages/process.jpg"
                 style={{
-                  objectFit: "cover",
+                  objectFit: "contain",
                   borderRadius: 8,
+                  width: "100%",
+                  height: "100%",
                 }}
-                height={250}
-                width={"90%"}
+                height={300}
+                width={600}
               />
             </Grid>
             <Grid sm={12} md={6}>
-              <Typography variant="h3" color={"#000"}>
+              <Typography variant="h3" color={"#fff"}>
                 Proceso
               </Typography>
-              <Typography color={"#000"} sx={{ fontSize: 18 }} mt={8}>
+              <Typography color={"#fff"} sx={{ fontSize: 18 }} mt={8}>
                 La naturaleza de cada proyecto requiere tratamiento y soluciones diferentes, por eso en Weibull
                 empezamos por conocer el modelo de negocios y entender las necesidades planteadas por la empresa,
                 abordamos la problemática con enfoque analítico con fin de generar una propuesta de valor.
@@ -163,28 +164,28 @@ const Home = () => {
             console.log(mode);
             switch (index) {
               case 0:
-                img = "/images/pages/services/muestreo.jpg";
+                img = "/images/pages/services/muestreo.webp";
                 break;
               case 1:
-                img = "/images/pages/services/modelado.jpg";
+                img = "/images/pages/services/control.webp";
                 break;
               case 2:
-                img = "/images/pages/services/desarrollo.jpg";
+                img = "/images/pages/services/modelado.webp";
                 break;
               case 3:
-                img = "/images/pages/services/investigacion.jpg";
+                img = "/images/pages/services/desarrollo.webp";
                 break;
               case 4:
-                img = "/images/pages/services/proyecciones.jpg";
+                img = "/images/pages/services/proyecciones.webp";
                 break;
               case 5:
-                img = "/images/pages/services/optimizacion.jpg";
+                img = "/images/pages/services/optimizacion.webp";
                 break;
               case 6:
-                img = "/images/pages/services/toma-decisiones.jpg";
+                img = "/images/pages/services/investigacion.webp";
                 break;
               case 7:
-                img = "/images/pages/services/habilidades.jpg";
+                img = "/images/pages/services/habilidades.webp";
                 break;
               default:
                 break;
@@ -197,27 +198,22 @@ const Home = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   paddingY: 10,
-                  height: 200,
-                  width: "45%",
+                  height: 300,
+                  width: {sm: "100%", md: "45%"},
                   margin: 1,
-                  backgroundImage:
-                    mode === "light"
-                      ? `linear-gradient(to bottom, rgba(200, 200, 200, .75), rgba(220,220, 220, .75)), url(${img})`
-                      : `linear-gradient(to bottom, rgba(20, 20, 20, .75), rgba(50,50 ,50, .85)), url(${img})`,
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                  backgroundPositionY: "center",
                 }}
                 elevation={4}
                 className="paper-like"
               >
-                <Typography
-                  fontSize={{ sm: 18, md: 22, lg: 26 }}
-                  fontWeight={200}
-                  align="center"
-                >
-                  {element}
-                </Typography>
+                <Image
+                  style={{
+                    width:'100%',
+                    objectFit: 'cover'
+                  }}
+                  src={img}
+                  width={600}
+                  height={300}
+                />
               </Paper>
             );
           })}
@@ -225,25 +221,24 @@ const Home = () => {
       </Grid>
       <Grid sm={12}>
         <Typography variant="h2">Beneficios</Typography>
-        <Grid container>
+        <Grid container rowGap={20} mt={10}>
           {data.benefits.content.details.map((element, index) => {
             let color = "";
             if (index % 2 === 0) {
-              color = mode === "light" ? "#a3927c" : "#7a5c42 ";
-            } else if (index % 3 === 0) {
-              color = mode === "light" ? "#6b8b7c" : "#5b614d";
+              color = mode === "light" ? "#253439" : "#226B86 ";
             } else {
-              color = mode === "light" ? "#c7c5c2" : "#4e4944";
+              color = mode === "light" ? "#226B86" : "#4e4944";
             }
             return (
-              <Card
+              <Grid xs={12} sm={3} justifyContent={'center'} alignContent={'center'} alignSelf={'center'} alignItems={'center'}>
+                <Card
                 sx={{
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                   width: 200,
                   height: 180,
-                  margin: 5,
+                  marginLeft: {xs:'30%', sm: 0},
                   backgroundColor: color,
                 }}
               >
@@ -252,11 +247,13 @@ const Home = () => {
                     fontSize={{ sm: 18, md: 20 }}
                     fontWeight={"600"}
                     align="center"
+                    color={"#7c898B"}
                   >
                     {element}
                   </Typography>
                 </CardContent>
               </Card>
+              </Grid>
             );
           })}
         </Grid>
