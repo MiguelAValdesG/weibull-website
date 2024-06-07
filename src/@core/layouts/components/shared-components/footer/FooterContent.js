@@ -30,12 +30,12 @@ const FooterContent = () => {
             "& :not(:last-child)": { mr: 4 },
           }}
         >
-          <Link target="_blank" href="https://mui.com/store/license/">
+          <Link target="_blank" href="mailto:contacto@weibull.mx">
             Email: contacto@weibull.mx
           </Link>
           <Link
             target="_blank"
-            href="https://mui.com/store/contributors/themeselection/"
+            href="tel:+523346054178"
           >
             Telefono: +52 (33) 4605 4178
           </Link>
