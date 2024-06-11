@@ -32,9 +32,12 @@ const Home = () => {
         >
           <Typography variant="h2">¿Quiénes somos?</Typography>
           <Typography sx={{ fontSize: "1.5em" }} mt={4}>
-            Somos un equipo de visionarios dedicados a crear, entender e interpretar los datos.<br />
-            Weibull está integrados por expertos en análisis de datos y desarrollo de herramientas
-            web capaces de transformar la información en toma de decisiones.
+            Somos un equipo de visionarios dedicados a crear, entender e
+            interpretar los datos.
+            <br />
+            Weibull está integrados por expertos en análisis de datos y
+            desarrollo de herramientas web capaces de transformar la información
+            en toma de decisiones.
           </Typography>
         </Grid>
       </Box>
@@ -42,12 +45,14 @@ const Home = () => {
         <Grid container>
           <Grid md={6} alignSelf={"center"}>
             <Typography variant="h2">¿Qué hacemos?</Typography>
-            <Typography sx={{ fontSize: "1.2em" }} mt={5}>
-              Impulsamos el entendimiento de datos de importancia internos y externos sustentados en la ciencia.
+            <Typography sx={{ fontSize: "1.2em" }} mt={5} textAlign={"justify"}>
+              Impulsamos el entendimiento de datos de importancia internos y
+              externos sustentados en la ciencia.
               <br />
               <br />
-              Brindamos soluciones de inteligencia de negocios desde la detección y recolección de información
-              relevante hasta poder decidir de manera estratégica ante la incertidumbre.
+              Brindamos soluciones de inteligencia de negocios desde la
+              detección y recolección de información relevante hasta poder
+              decidir de manera estratégica ante la incertidumbre.
             </Typography>
           </Grid>
           <Grid sm={1} />
@@ -145,12 +150,19 @@ const Home = () => {
               <Typography variant="h3" color={"#fff"}>
                 Proceso
               </Typography>
-              <Typography color={"#fff"} sx={{ fontSize: 18 }} mt={8}>
-                La naturaleza de cada proyecto requiere tratamiento y soluciones diferentes, por eso en Weibull
-                empezamos por conocer el modelo de negocios y entender las necesidades planteadas por la empresa,
-                abordamos la problemática con enfoque analítico con fin de generar una propuesta de valor.
-                Nos especializamos en soluciones tecnológicas que involucran desde el desarrollo de herramientas web
-                hasta el procesamiento y análisis de los datos.
+              <Typography
+                color={"#fff"}
+                sx={{ fontSize: 18 }}
+                mt={8}
+                textAlign={"justify"}
+              >
+                La naturaleza de cada proyecto requiere tratamiento y soluciones
+                diferentes, por eso en Weibull empezamos por conocer el modelo
+                de negocios y entender las necesidades planteadas por la
+                empresa, abordamos la problemática con enfoque analítico con fin
+                de generar una propuesta de valor. Nos especializamos en
+                soluciones tecnológicas que involucran desde el desarrollo de
+                herramientas web hasta el procesamiento y análisis de los datos.
               </Typography>
             </Grid>
           </Grid>
@@ -199,7 +211,7 @@ const Home = () => {
                   alignItems: "center",
                   paddingY: 10,
                   height: 300,
-                  width: {sm: "100%", md: "45%"},
+                  width: { sm: "100%", md: "45%" },
                   margin: 1,
                 }}
                 elevation={4}
@@ -207,8 +219,8 @@ const Home = () => {
               >
                 <Image
                   style={{
-                    width:'100%',
-                    objectFit: 'cover'
+                    width: "100%",
+                    objectFit: "cover",
                   }}
                   src={img}
                   width={600}
@@ -230,29 +242,36 @@ const Home = () => {
               color = mode === "light" ? "#226B86" : "#4e4944";
             }
             return (
-              <Grid xs={12} sm={3} justifyContent={'center'} alignContent={'center'} alignSelf={'center'} alignItems={'center'}>
-                <Card
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: 200,
-                  height: 180,
-                  marginLeft: {xs:'30%', sm: 0},
-                  backgroundColor: color,
-                }}
+              <Grid
+                xs={12}
+                sm={3}
+                justifyContent={"center"}
+                alignContent={"center"}
+                alignSelf={"center"}
+                alignItems={"center"}
               >
-                <CardContent>
-                  <Typography
-                    fontSize={{ sm: 18, md: 20 }}
-                    fontWeight={"600"}
-                    align="center"
-                    color={"#7c898B"}
-                  >
-                    {element}
-                  </Typography>
-                </CardContent>
-              </Card>
+                <Card
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: 200,
+                    height: 180,
+                    marginLeft: { xs: "30%", sm: 0 },
+                    backgroundColor: color,
+                  }}
+                >
+                  <CardContent>
+                    <Typography
+                      fontSize={{ sm: 18, md: 20 }}
+                      fontWeight={"600"}
+                      align="center"
+                      color={"#7c898B"}
+                    >
+                      {element}
+                    </Typography>
+                  </CardContent>
+                </Card>
               </Grid>
             );
           })}
