@@ -169,6 +169,22 @@ const Home = () => {
         </Box>
       </Grid>
       <Grid sm={12}>
+        <iframe
+          width="100%"
+          height="600"
+          src="https://www.youtube.com/embed/K4TOrB7at0Y"
+          title="Demo Background Sample Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          style={{
+            borderRadius: 12,
+            margin: 0,
+          }}
+        ></iframe>
+      </Grid>
+      <Grid sm={12}>
         <Typography variant="h2">Servicios</Typography>
         <Grid container columns={{ xs: 1, sm: 2 }} mt={5}>
           {data.services.content.details.map((element, index) => {
@@ -239,7 +255,7 @@ const Home = () => {
             if (index % 2 === 0) {
               color = mode === "light" ? "#253439" : "#226B86 ";
             } else {
-              color = mode === "light" ? "#226B86" : "#4e4944";
+              color = mode === "light" ? "#226B86" : "#7c898b";
             }
             return (
               <Grid
@@ -266,7 +282,7 @@ const Home = () => {
                       fontSize={{ sm: 18, md: 20 }}
                       fontWeight={"600"}
                       align="center"
-                      color={"#7c898B"}
+                      color={mode == "light" ? "#fff" : "#253439"}
                     >
                       {element}
                     </Typography>
