@@ -7,6 +7,7 @@ import { Box, CardHeader, CardMedia, Paper } from "@mui/material";
 import data from "src/data/content";
 import { useSettings } from "src/@core/hooks/useSettings";
 import Image from "next/image";
+import VideoYoutube from "src/views/pages/video-youtube";
 
 const Home = () => {
   const { settings } = useSettings();
@@ -43,7 +44,7 @@ const Home = () => {
       </Box>
       <Grid item sm={12}>
         <Grid container>
-          <Grid md={6} alignSelf={"center"}>
+          <Grid sm={12} md={6} alignSelf={"center"}>
             <Typography variant="h2">¿Qué hacemos?</Typography>
             <Typography sx={{ fontSize: "1.2em" }} mt={5} textAlign={"justify"}>
               Impulsamos el entendimiento de datos de importancia internos y
@@ -57,10 +58,10 @@ const Home = () => {
           </Grid>
           <Grid sm={1} />
           <Grid sm={4}>
-            <Paper sx={{ width: 500, height: 300 }} elevation={8}>
+            <Paper sx={{ width: "100%", height: 300, mt: {xs: 12, sm: 0} }} elevation={8}>
               <img
                 src="/images/pages/who-we-are.jpg"
-                width={500}
+                width={"100%"}
                 height={300}
                 style={{ borderRadius: 8, objectFit: "cover" }}
               />
@@ -133,7 +134,7 @@ const Home = () => {
             justifyItems={"center"}
             alignItems={"center"}
           >
-            <Grid sm={12} md={6} paddingRight={10}>
+            <Grid sm={12} md={6} paddingRight={{sm: 10}}>
               <Image
                 src="/images/pages/process.jpg"
                 style={{
@@ -168,22 +169,9 @@ const Home = () => {
           </Grid>
         </Box>
       </Grid>
-      <Grid sm={12}>
-        <iframe
-          width="100%"
-          height="600"
-          src="https://www.youtube.com/embed/K4TOrB7at0Y"
-          title="Demo Background Sample Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          style={{
-            borderRadius: 12,
-            margin: 0,
-          }}
-        ></iframe>
-      </Grid>
+
+      <VideoYoutube/>
+
       <Grid sm={12}>
         <Typography variant="h2">Servicios</Typography>
         <Grid container columns={{ xs: 1, sm: 2 }} mt={5}>
@@ -236,7 +224,7 @@ const Home = () => {
                 <Image
                   style={{
                     width: "100%",
-                    objectFit: "cover",
+                    objectFit: {xs: "fill", sm: "cover"},
                   }}
                   src={img}
                   width={600}
